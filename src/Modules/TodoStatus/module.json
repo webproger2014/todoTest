@@ -1,0 +1,11 @@
+{
+    "name": "TodoStatus",
+    "alias": "todostatus",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TodoStatus\\Providers\\TodoStatusServiceProvider"
+    ],
+    "files": []
+}

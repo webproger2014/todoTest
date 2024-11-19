@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/todostatus",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\TodoStatus\\": "app/",
+            "Modules\\TodoStatus\\Database\\Factories\\": "database/factories/",
+            "Modules\\TodoStatus\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\TodoStatus\\Tests\\": "tests/"
+        }
+    }
+}
