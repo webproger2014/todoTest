@@ -23,17 +23,19 @@ API для управления задачами (Todo). Этот API предо
 
 ---
 
-## **Описание маршрутов**
-
-**Фильтр по статусу** [array] status 
+**Фильтр по статусу** <br/> 
+[array] status <br/>
 Пример status[1, 2, 3] <br>
 - 1 Новая задача <br>
 - 2 В работе <br>
 - 3 Завершено <br>
 - 4 Отменено <br>
 
-**Соортировка ** [array] order, [string] order.0, [string] order.1
-    order['deadline_at', 'asc'];
+**Соортировка** <br>
+[array] order, <br>
+[string] order.0, <br>
+[string] order.1 <br>
+order['deadline_at', 'asc'];
 
 Возвращает список задач с возможностью фильтрации и пагинации.
 
