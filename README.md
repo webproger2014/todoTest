@@ -4,11 +4,11 @@ API для управления задачами (Todo). Этот API предо
 
 
 ### **1. Установка в Linux**
-**Запуск миграций:** sudo docker-compose run artisan module:migrate User TodoStatus Todo --seed
-**Запуск docker** [sudo docker-compose up -d]
-**Вход в pgadmin** (http://localhost:5050) Логин: appsklimov@yandex.ru пароль: leadadmin
-**Распложение** Программный кодый распогается в src/Modules
-**URL** Запросы API работают через адрес (http://localhost:8668/api/v1/todo/)
+**Запуск миграций:** sudo docker-compose run artisan module:migrate User TodoStatus Todo --seed <br>
+**Запуск docker** [sudo docker-compose up -d] <br>
+**Вход в pgadmin** (http://localhost:5050) Логин: appsklimov@yandex.ru пароль: leadadmin <br>
+**Распложение** Программный кодый распогается в src/Modules <br>
+**URL** Запросы API работают через адрес (http://localhost:8668/api/v1/todo/) <br>
 
 ---
 
@@ -25,13 +25,12 @@ API для управления задачами (Todo). Этот API предо
 
 ## **Описание маршрутов**
 
-### **2. Получение списка задач**
-**Метод:** `GET /api/v1/todo`
-**Фильтр по статус** [array] status . Пример status[1, 2, 3]
-- 1 Новая задача
-- 2 В работе
-- 3 Завершено
-- 4 Отменено
+**Фильтр по статусу** [array] status 
+Пример status[1, 2, 3] <br>
+- 1 Новая задача <br>
+- 2 В работе <br>
+- 3 Завершено <br>
+- 4 Отменено <br>
 
 **Соортировка ** [array] order, [string] order.0, [string] order.1
     order['deadline_at', 'asc'];
